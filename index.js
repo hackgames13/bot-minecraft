@@ -12,7 +12,7 @@ function bot() {
   });
 
   bot.on('end', () => {
-    new Promise(resolve => setTimeout(resolve, 3 * 1000));
+    new Promise(resolve => setTimeout(resolve, 5000));
     bot();
   });
 }
