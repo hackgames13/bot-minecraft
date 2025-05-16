@@ -1,4 +1,5 @@
 const mineflayer = require('mineflayer');
+const keep_alive = require('./keep_alive.js')
 
 function bot() {
   const bot = mineflayer.createBot({
