@@ -9,6 +9,8 @@ function createBot() {
 
   bot.on('spawn', () => {
     console.log('Bot spawned!');
+    bot.chat('/register password123 password123');
+    bot.chat('/login password123');
   });
 
   bot.on('end', async () => {
