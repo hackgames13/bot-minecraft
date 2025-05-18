@@ -24,7 +24,7 @@ function createBot() {
       const dir = directions[Math.floor(Math.random() * directions.length)];
 
       // Random duration (500ms to 3000ms)
-      const duration = 500 + Math.random() * 2500;
+      const duration = 500 + Math.random() * 2000;
 
       console.log(`Walking ${dir} for ${Math.floor(duration)} ms`);
 
@@ -33,7 +33,7 @@ function createBot() {
         bot.setControlState(dir, false);
       }, duration);
 
-    }, 4000); // Repeat every 4 seconds
+    }, 2000); // Repeat every 4 seconds
   });
 
   bot.on('end', async () => {
