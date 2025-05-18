@@ -37,8 +37,8 @@ function createBot() {
   });
 
   bot.on('end', async () => {
-    console.log('Bot disconnected. Reconnecting in 10 seconds...');
-    await new Promise(resolve => setTimeout(resolve, 10000));
+    console.log('Bot disconnected. Reconnecting in 1 seconds...');
+    await new Promise(resolve => setTimeout(resolve, 1000));
     createBot(); // Recursively restart bot
   });
 
