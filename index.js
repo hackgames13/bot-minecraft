@@ -11,7 +11,8 @@ function createBot() {
 
   bot.on('spawn', async () => {
     console.log('Bot spawned!');
-    bot.chat(`/login ${process.env['password']}`)
+    bot.chat(`/register ${process.env['password']} ${process.env['password']}`);
+    bot.chat(`/login ${process.env['password']}`);
     await new Promise(resolve => setTimeout(resolve, 2500));
     setInterval(() => {
       // Random look direction (yaw and pitch)
